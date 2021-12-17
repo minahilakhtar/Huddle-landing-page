@@ -14,10 +14,12 @@ body{
     background-image: url(images/bg-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top left;
     background-color: hsl(257, 40%, 49%);
 }
 
 .container{
+    padding: 30px;
     max-width: 1320px;
     margin: 0 auto;
     height: 100vh;
@@ -35,8 +37,8 @@ body{
 }
 
 .header img{
-    width: 170px;
-    padding-bottom: 20px;
+    width: 200px;
+    margin: 0 0 6.1em 0;
 }
 
 .main{
@@ -49,9 +51,12 @@ body{
     font-family: 'Open Sans';
     font-weight: 600;
     color: #fff;
-    font-size: 39px;
-    line-height: 1.7;
+    font-size: 40px;
+    line-height: 60px;
     margin-bottom: 20px;
+    
+    width: 487px;
+    margin: 0;
 }
 
 .hero-text p{
@@ -85,8 +90,9 @@ body{
 .social a i {
     color: #fff;
     position: relative;
-    font-size: 18px;
+    font-size: 19px;
     transition: all .3s ease;
+    
 }
 
 .social a:not(:first-child){
@@ -115,13 +121,15 @@ body{
     border-color: hsl(300, 69%, 71%);
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1440px) {
+    
     .hero-img img {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    
     .container{
         padding: 0px 30px;
     }
